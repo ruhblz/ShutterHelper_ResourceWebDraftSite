@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #000;
+  color: #ff4444;
+  border-bottom: 3px solid #cc0000;
+}
+
+header h1 {
+  margin: 0;
+  color: #ff6666;
+  font-size: clamp(40px, 10vw, 120px);
+}
+
+header p {
+  margin: 10px 0 0 0;
+  color: #ff4444;
+  font-size: clamp(16px, 4vw, 32px);
+}
+
+/* NAVIGATION */
+nav {
+  text-align: left;
+  padding: 15px 20px;
+  background-color: #0a0a0a;
+  border-bottom: 2px solid #cc0000;
+}
+
+nav a {
+  color: #ff4444;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ALWAYS 2 columns */
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.photo img:hover { 
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.caption {
+  display: none;
+  padding: 10px;
+  background-color: #1a1a1a;
+  color: #ff4444;
+  border: 1px solid #cc0000;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 14px;
+}
